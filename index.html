@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="jquery.fileDownload.js"></script>
+
+	<title></title>
+</head>
+<body>
+<input type="button" name="click" value="click" id="click">
+<script type="text/javascript">
+	 $(document).ready(function(){
+	 	 $("#click").click(function(){
+ $.fileDownload('sample.zip')
+    .done(function () { alert('File download a success!'); })
+    .fail(function () { alert('File download failed!'); });
+});
+});
+</script>
+</body>
+</html>
